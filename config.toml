@@ -1,13 +1,13 @@
-baseURL = 'https://weiseguy.net/'
+baseURL = 'https://test.mcelwain.me/'
 defaultContentLanguage = "en"
 languageCode = "en-us"
 
-title = 'Weiseguy'
+title = 'Connor McElwain'
 theme = 'gokarna'
 
 [params]
-  avatarURL = "/images/logos/logo.png"
-  description = "The Journey from Sys Admin to Dev Ops"
+  avatarURL = "/images/logos/"
+  description = "DESC"
   ShowBackToTopButton = true
   metaKeywords = ["blog", "gokarna", "hugo"]
 
@@ -21,7 +21,7 @@ theme = 'gokarna'
 [menu]
   [[menu.main]]
     identifier = "Home"
-    url = "https://weiseguy.net"
+    url = "https://test.mcelwain.me"
     name = "Home"
     pre = "<span data-feather='home'></span>"
     weight = 1
@@ -44,6 +44,6 @@ theme = 'gokarna'
     weight = 4
   [[menu.main]]
     identifier = "github"
-    url = "https://github.com/weiseguy1"
+    url = "https://github.com/ConnorMcElwain"
     weight = 5
     pre = "<span data-feather='github'></span>"

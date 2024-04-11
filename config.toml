@@ -40,10 +40,15 @@ theme = 'gokarna'
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "about/"
+    url = "/about/"
     weight = 4
+    [[menu.main]]
+    identifier = "test"
+    name = "Test"
+    url = "test/"
+    weight = 5
   [[menu.main]]
     identifier = "github"
     url = "https://github.com/ConnorMcElwain"
-    weight = 5
+    weight = 6
     pre = "<span data-feather='github'></span>"

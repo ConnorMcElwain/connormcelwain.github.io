@@ -21,7 +21,7 @@ theme = 'gokarna'
 [menu]
   [[menu.main]]
     identifier = "Home"
-    url = "https://test.mcelwain.me"
+    url = "/home/"
     name = "Home"
     pre = "<span data-feather='home'></span>"
     weight = 1
@@ -42,13 +42,8 @@ theme = 'gokarna'
     name = "About"
     url = "/about/"
     weight = 4
-    [[menu.main]]
-    identifier = "test"
-    name = "Test"
-    url = "test/"
-    weight = 5
   [[menu.main]]
     identifier = "github"
     url = "https://github.com/ConnorMcElwain"
-    weight = 6
+    weight = 5
     pre = "<span data-feather='github'></span>"

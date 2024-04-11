@@ -338,3 +338,222 @@ This is deployment and management services for Azure. If you interact with any o
 	* All interaction with Azure resources go through the ARM. It's the main Azure Architecture component for creating, updating, and manipulating resources.
 
 ------
+
+
+# Chapter 4 - Compute
+## Virtual Machines
+### What is a Virtual Machine?
+A virtual machine is the virtualization or emulation of a computer system. They are based on computer architectures and provide the same functionality as a physical machine.
+
+### Features
+* Infrastructure-as-a-Service (IaaS)
+	* Manage everything except the hardware. This includes the network components
+* Tools
+	* Use the Azure Portal to manage large numbers of VMs and even hybrid clouds
+* Compliance
+	* Use Azure blueprints to make your VMs comply with company guidelines
+* Recommendations
+	* Azure will recommend improvements to ensure better security, higher availability, and greater performance
+* Choice
+	* Choose amount of RAM, number of CPUs, Windows or Linux
+
+### Pricing
+* Calculated Hourly
+	* The more CPUs, GPUs, and amount of RAM you want, the more you pay per hour
+
+### Use Cases
+* Pros:
+	* Control
+		* Use virtual machines when you need to control all aspects of an environment or machine
+	* Application
+		* Install specific applications on your Windows or Linux machines
+	* Existing Infrastructure
+		* You can move existing resources and virtual machines to Azure from on-premises or another cloud provider
+* Cons:
+	* Not for Everything
+		* If you can use another Azure service instead, it is often worth it
+	* Maintenance
+		* A lot of maintenance with VMs. Operating system updates, patches, security concerns
+
+### Exam Tips
+Virtual Machines are at the core of Azure compute and are widely used.
+* A virtual machine is  your machine exclusively
+* You don't buy, own or control any hardware. Azure does this
+* Virtual machines are an IaaS offering where you are responsible for the entire machine
+* Azure virtual machines take advantage of Azure tools
+* Pricing goes up as resources go up, and you pay by the hour
+
+
+## Scale Sets
+### Definition
+A group of identical, load balanced VMs.
+
+### Benefits
+* Multiple VMs
+	* Simple to manage multiple identical VMs using a load balancer
+* High Availability
+	* If one VM fails or stops, the others in the scale set will keep working
+* Auto Scaling
+	* Automatically match demand by adding or removing VMs from the scale set
+* Large Scale
+	* Run up to 1000 VMs in a single scale set
+* No Extra Cost
+	* No added cost for using scale sets
+
+### Exam Tips
+Scale sets are taking virtual machines to the next level. And keeping your sanity.
+* Scale sets are identical VMs. They can be activated or deactivated as needed
+* A baseline VM for the scale set ensures application stability. A baseline VM is what you copy to make up the scale set VMs
+* As resource usage increases, more VMs are activated to take the load
+* You only pay for the VM, storage, and networking resources you use. Nothing additional for scale sets
+
+
+## App Services
+App Services are a fully managed platform. The servers, networks, and storage are all handled and managed by Azure. The only thing you have to do is focus on business value and logic.
+
+* App Services
+	* Web Apps
+		* Website and online applications hosted on Azure's managed platform
+			* Runs on both Windows and Linux platforms
+			* Supports a lot of languages, such as .NET, Java, Node.js, PHP, Python, and Ruby
+			* Azure integration for easier deployment
+			* Auto-scaling and load balancing
+	* Web Apps for Containers
+		* Deploy and run containerized applications in Azure
+			* A container is completely self-contained
+			* All dependencies are shipped inside the container
+			* Deploy anywhere with a consistent experience
+			* Reliable between environments
+	* API Apps
+		* Expose and connect your data backend
+			* Application Programming Interface
+			* No graphical component. No user interface
+			* Connect other application programmatically
+			* Use a range of programming languages
+
+### Exam Tips
+App services is an easy way to host and manage your web applications.
+* App services are a PaaS offering on Azure
+* Web Apps are used to host web sites and web applications
+* Web Apps for Containers can host your existing container images
+* API Apps can host your data backend services
+
+
+## Azure Container Instances
+### Features
+* Manage Application Dependencies
+	* All the dependencies for an application are included in the container image. You can manage the application and its dependencies with confidence
+* Less Overhead
+	* Virtual machines require a lot more maintenance and updates. Containers don't have any components relating to the operating system that require maintenance
+* Increased Portability
+	* Applications running in containers can be deployed easily to multiple different operating systems and hardware platforms
+* Efficiency
+	* Development, deployment, and maintenance are all more efficient when using containers. Scaling and patching is much simpler
+* Consistency
+	* The operations team can rely on containers being the same every time, no matter which target they are being deployed to
+
+### Workflow
+* Software Development Cycle
+* Application placed in a container
+* Azure Container Instances
+
+### Azure Container Instances
+* User to Run Container Workloads
+	* Primary Azure service for running container workloads. A workload is your process or application
+* On Demand = Save money
+	* Use containerized applications to process data on demand, by only creating the container image when  you need it. Saving some money in the process
+* Works With Your Tool of Choice
+	* Use the Azure Portal, Azure CLI, or PowerShell. Whichever you like the most
+
+
+## Azure Kubernetes Service
+Kubernetes is an open-source container orchestration system for automating application deployment, scaling, and management.
+
+* Open Source
+	* Public code base and community involvement in the product
+* Orchestration
+	* Keeps track of lots of parts of a system. Makes sure containers are configured correctly to work together
+* Automatic application deployment
+	* Kubernetes will deploy more images of containers as needed
+* Automatic scaling
+	* Automatic monitoring of application load to determine when to scale the number of containers used
+
+### Azure Kubernetes Service
+* Replicate Container Architectures
+	* Reuse your container architecture by managing it in Kubernetes. This makes your setup quicker and confidence in the system increase
+* Standard Azure Services Included
+	* You don't have to worry about infrastructure and hardware. Get identity and access management, elastic provisioning and much more
+* Global Reach
+	* Use Kubernetes with supported Azure regions and on-premises installations using Azure Stack
+
+### Azure Container Registry (ACR)
+* Keeps track of current valid container images
+* Manages files and artifacts for containers
+* Feeds container images to ACI and AKS
+* Use Azure identity and security features
+
+
+## Azure Virtual Desktop
+Use any VM you want and access it from any device that has web access and a modern web client.
+
+### Benefits
+Azure Virtual Desktop is a completely virtualized version of Windows, meaning it runs 100% in the cloud.
+* Reuse Windows 10 Licenses
+	* This will reduce costs and streamline license usage
+* Concurrency
+	* Multiple users can use the same VM instance
+* Access Anywhere
+	* Use Windows 10/11 from anywhere on any device with an internet browser
+* Secure Data
+	* Use Azure Storage to secure your data
+
+
+
+## Functions
+### What are Azure Functions?
+* IaaS/PaaS vs Function
+	* IaaS/PaaS
+		* Install your own applications
+		* Access to the operating system
+		* Resource visibility
+		* An app service has no OS access, but has resource access
+	* Function
+		* Smallest compute service on Azure
+		* A single function of compute
+		* Called, or invoked, via a standard web address
+		* Runs once and stops
+
+### Architecture
+* VM
+	* No maintenance
+	* No processes
+	* Nothing VM related
+
+### Function Benefits 
+* Only Runs When Needed
+	* The Azure Function only runs when there is data to process. No traffic = no resource usage
+* Saves Money
+	* No resources running means you don't pay for the function when it's not used
+* Resilience
+	* If your function fails, it doesn't affect other function instances
+
+
+
+## Chapter 4 Summary
+### Compute Summary
+* Virtual Machines
+	* Virtualized hardware you control. Spin up ad down as needed. Take advantage of the Azure tools available. Priced per hour with many configurations available.
+* Scale Sets
+	* Sets of identical VMs. Scale sets automatically create and delete VMs for your application. Provides high availability and protects against server failures
+* App Services
+	* Managed platform to host your applications. Web app, containers and API. Supports a lot of programming languages
+* Azure Container Instances
+	* Hosts and runs your containers on Azure. Containers have less overhead than virtual machines and can be deployed consistently
+* Azure Kubernetes Service
+	* Open-source tool for orchestrating and managing many container images and applications. Uses clusters and pods to scale and deploy applications
+* Windows Virtual Desktop
+	* 100% virtualized Windows 10. Access with any device that has a browser and internet connection. Reuse licenses to save some money
+* Functions
+	* Serverless Azure offering. A function does one compute action each time it's invoked
+
+------

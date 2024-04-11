@@ -6,7 +6,7 @@ author: "Connor McElwain"
 draft: false
 type: "post"
 showTableOfContents: false 
-tags: ["Azure", "AZ-900", "Cloud" "Notes"]
+tags: ["Azure", "AZ-900", "Cloud", "Notes"]
 ---
 
 # Chapter 1 - Introduction

@@ -243,3 +243,98 @@ Service is the core of Azure, and there are three main ways to go about it.
 	* Private, public, and hybrid approaches to using cloud computing for your business.
 
 ------
+
+# Chapter 3 - Azure Architecture
+## Regions & Availability Zones
+### Region Definition
+"A region is a set of datacenters deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network."
+
+### Region Definition - Broken Down
+* A set datacenters
+	* Each region has more than one data center, which is a physical location.
+* Latency defined perimeter
+	* Latency is the time it takes data to travel. Also means that datacenters are not "too far" from each other.
+* Regional low-latency network
+	* A fiber connection between data centers in the region.
+
+Two or more data centers not too far from each other connected with a fiber connection.
+
+### How to Choose a Region
+* Location
+	* Choose a region closest to your users to minimize latency.
+* Features
+	* Some features aren't in all regions. If you need a specific feature, some regions might be unavailable.
+* Price
+	* The price of services vary from region to region.
+
+You will often have to choose which is the most important: location, feature, or price.
+
+### Paired Region
+* Each Region is Paired
+	* Paired within same geographic are except Brazil South.
+* Outage Failover
+	* If the primary region has an outage, you can failover to the secondary region.
+* Planned Updates
+	* Only one region in a pair is updated at any one time.
+* Replication
+	* Some services used paired regions for replication.
+
+### Availability Zones
+* Physical Location
+	* Each availability zone is a physical location within a region.
+* Independent
+	* Each zone has its own power, cooling and networking.
+* Zones
+	* Each region has a minimum of three zones.
+
+#### Summary
+* Azure Region
+	* A set of data centers that are close enough to each other that it doesn't matter which datacenter you data is in. Latency is the time it takes for data to travel.
+* Availability Zone
+	* Within a region and each zone has its own separate power, cooling and networking. Used for protecting data from failures.
+
+
+## Resource Groups & Azure Resource Manager
+### Resource Groups
+Everything in Azure is inside a resource group, no exceptions! While all resources must be inside of a resource group, the resource groups themselves are not a resource.
+
+### Resource Group Facts
+* One Resource
+	* Each resource can only exist in a single resource group.
+* Add/Remove
+	* You can add or remove resources to any resource group at any time.
+* Move Resource
+	* You can move a resource from one resource group to another.
+* Multiple Regions
+	* Resources from multiple regions can be in one resource group.
+* Access Control
+	* You can give users access to a resource group and everything in it.
+* Interact
+	* Resources can interact with other resources in different resource groups.
+* Location
+	* A resource group has a location, or region, as it stores meta data about the resources in it.
+
+### Azure Resource Manager (ARM)
+This is deployment and management services for Azure. If you interact with any of the resources on Azure, it goes through ARM.
+
+### ARM Benefits
+* Group Resource Handling
+	* You can deploy, manage, and monitor resources as a group.
+* Consistency
+	* Deploying resources from various tools will always result in the same consistent state.
+* Dependencies
+	* Define dependencies between resources to make sure they don't get in a fight.
+* Access Control
+	* Built-in features in the ARM make it easy to assign access rights to users.
+* Tagging
+	* Tag resources to easily identify them for future scenarios. Tagging is a way to label individual resources.
+* Billing
+	* Use tagging to stay on top of billing for groups of resources.
+
+#### Summary
+* Resource Groups
+	* All resources belong to a resource group. It isn't a resource, but helps structure your Azure architecture.
+* Azure Resource Manager
+	* All interaction with Azure resources go through the ARM. It's the main Azure Architecture component for creating, updating, and manipulating resources.
+
+------

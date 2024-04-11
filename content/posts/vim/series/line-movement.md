@@ -3,7 +3,7 @@ title: "Vim Series: Line Movement"
 date: 2022-09-07T09:41:46-05:00
 description: "The 3rd part of the vim series"
 author: "Kyle Weise"
-draft: false
+draft: true
 type: "post"
 showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]

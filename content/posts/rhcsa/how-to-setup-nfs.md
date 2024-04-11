@@ -2,7 +2,7 @@
 title: "How to Setup NFS"
 date: 2024-01-05T08:30:40-06:00
 description: "Sharing drives between Linux/Unix systems"
-draft: false
+draft: true
 type: "post"
 tags: ["linux", "ex200", "storage"]
 showTableOfContents: true

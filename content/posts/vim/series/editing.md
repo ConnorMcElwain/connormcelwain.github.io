@@ -3,7 +3,7 @@ title: "Vim Series: Editing"
 date: 2022-08-29T11:30:29-05:00
 description: "The 2nd part of the vim series"
 author: "Kyle Weise"
-draft: false 
+draft: true 
 type: "post"
 showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]

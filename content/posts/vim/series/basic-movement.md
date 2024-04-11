@@ -3,7 +3,7 @@ title: "Vim Series: Movement"
 date: 2022-08-21T13:27:08-05:00
 description: "The 1st part of the vim series"
 author: "Kyle Weise"
-draft: false
+draft: true
 type: "post"
 showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]

@@ -3,7 +3,7 @@ title: "The Docker Series: Explained"
 date: 2022-08-13T08:39:56-05:00
 description: "I can't contain my excitement"
 author: "Kyle Weise"
-draft: false
+draft: true
 type: "post"
 showTableOfContents: true
 tags: ["Docker", "Containers", "DevOps", "Linux", "Explained" ]

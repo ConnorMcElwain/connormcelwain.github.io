@@ -2,7 +2,7 @@
 title: "Setup 2FA on SSH"
 date: 2024-03-01T18:58:19-06:00
 description: "Setting up OATH-TOTP on SSH servers"
-draft: false
+draft: true
 type: "post"
 tags: ["blueteam", "linux", "security"]
 showTableOfContents: true

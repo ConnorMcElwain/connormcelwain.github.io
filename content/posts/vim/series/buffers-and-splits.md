@@ -3,7 +3,7 @@ title: "Vim Series: Buffers & Splits"
 date: 2022-09-08T21:19:20-05:00
 description: "The 4th and final part of how to use vim"
 author: "Kyle Weise"
-draft: false
+draft: true
 type: "post"
 showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]

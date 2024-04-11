@@ -15,8 +15,10 @@ tags: ["Azure", "AZ-900", "Cloud", "Notes"]
 - **Azure Resource Manager** is utilized by PowerShell, like the Portal in Azure, to manipulate Azure resources.
 - PowerShell is versatile, it's used for many other tasks and areas, not just for Azure.
 
+
 ## Cloud Shell
 Cloud Shell is an interactive, browser-accessible shell for managing Azure resources. There's a stand-alone window version of the Azure Cloud Shell and an "In-Portal" integrated version as well. You can choose between both **Bash** and **PowerShell** shells. You can access this tool from anywhere using the web or mobile app. The Cloud Shell has **dedicated storage** to persist data between sessions.
+
 
 ## Accessing and Using the Azure Cloud Shell (Lab)
 **Lab Tasks/Steps**
@@ -35,10 +37,13 @@ PowerShell Commands
 
 **[Lab Link](https://learn.acloud.guru/handson/c3b7cd51-ba36-4bdb-b815-0ea8b444a41f/course/az-900-microsoft-azure-fundamentals)**
 
+
 ## Azure Advisor
 Azure Advisor is made to guide and inform the user of ways to save money, learn about features they may not know about, but can be helpful, and ensure settings and features are properly configured to ensure security, reliability, and saving money.
 
+
 ------
+
 
 # Chapter 2 - Cloud Concepts
 ## The Language of Cloud Computing
@@ -99,7 +104,6 @@ Azure Advisor is made to guide and inform the user of ways to save money, learn 
 		* APIs
 
 ### Exam Tips
-
 #### Cloud computing has terms that are specific and critical to understanding it
 * High availability means systems are always available -- even automatically.
 * Reliability describes how Azure can tolerate failures or even disasters.
@@ -108,6 +112,7 @@ Azure Advisor is made to guide and inform the user of ways to save money, learn 
 * Security is having full control of  your cloud security posture.
 * Governance is standardizing cloud deployments to meet requirements/company standards.
 * Manageability is management of cloud resources and how we interact with them.
+
 
 ## The Economy of Cloud Computing
 ### Capital and Operational Expenditure
@@ -122,11 +127,11 @@ Azure Advisor is made to guide and inform the user of ways to save money, learn 
 	* Low usage = Low cost
 		* No lock-in fees. Exposure to Azure.
 
-
 ### Exam Tips
 * Capital Expenditure (CapEx) is buying hardware outright, paid upfront as a one time purchase.
 * Operational Expenditure (OpEx) is ongoing costs needed to run your business.
 * Consumption-based pricing let's you pay only for what you use.
+
 
 ## Cloud Service Models
 ### Infrastructure-as-a-Service (IaaS)
@@ -190,6 +195,7 @@ Service is the core of Azure, and there are three main ways to go about it.
 * SaaS is when service is built on top of PaaS, like Office 365
 * Serverless means that you don't have any servers. Let's a single function be hosted, deployed, run and managed on its own
 
+
 ## Azure Marketplace
 * Solutions and Services
 	* Large selection from Microsoft and partners. Apps, VMs, templates, services and more
@@ -197,6 +203,7 @@ Service is the core of Azure, and there are three main ways to go about it.
 	* Buy cloud services with a single click. Many categories of items to acquire
 * Easy to Integrate
 	* Use from Portal, CLI or PowerShell. Some are free, some are paid
+
 
 ## Cloud Architect Models
 * Private Cloud
@@ -227,6 +234,7 @@ Service is the core of Azure, and there are three main ways to go about it.
 * Private cloud is Azure on your own hardware in a location of your choice. All the benefits of public cloud, but you can lock it down. A lot of staff required.
 * Public cloud is Azure, AWS, GCP. No upfront costs, but monthly usage. Little control over services and infrastructure.
 * A hybrid cloud model is the best of private and public, but could be complex.
+
 
 ## Chapter 2 Summary
 ### Cloud Concepts Summary
@@ -336,6 +344,7 @@ This is deployment and management services for Azure. If you interact with any o
 	* All resources belong to a resource group. It isn't a resource, but helps structure your Azure architecture.
 * Azure Resource Manager
 	* All interaction with Azure resources go through the ARM. It's the main Azure Architecture component for creating, updating, and manipulating resources.
+
 
 ------
 
@@ -508,7 +517,6 @@ Azure Virtual Desktop is a completely virtualized version of Windows, meaning it
 	* Use Azure Storage to secure your data
 
 
-
 ## Functions
 ### What are Azure Functions?
 * IaaS/PaaS vs Function
@@ -538,9 +546,7 @@ Azure Virtual Desktop is a completely virtualized version of Windows, meaning it
 	* If your function fails, it doesn't affect other function instances
 
 
-
 ## Chapter 4 Summary
-### Compute Summary
 * Virtual Machines
 	* Virtualized hardware you control. Spin up ad down as needed. Take advantage of the Azure tools available. Priced per hour with many configurations available.
 * Scale Sets
@@ -555,5 +561,6 @@ Azure Virtual Desktop is a completely virtualized version of Windows, meaning it
 	* 100% virtualized Windows 10. Access with any device that has a browser and internet connection. Reuse licenses to save some money
 * Functions
 	* Serverless Azure offering. A function does one compute action each time it's invoked
+
 
 ------

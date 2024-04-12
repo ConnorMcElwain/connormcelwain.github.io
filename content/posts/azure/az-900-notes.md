@@ -1036,6 +1036,7 @@ Types of Storage Account
 
 ------
 
+
 # Chapter 7 - Database (Supplemental)
 ## Cosmos DB
 ### Synchronization
@@ -1504,4 +1505,958 @@ Single Sign-On
 
 
 ------
+
+
+# Chapter 9 - Azure Solutions (Supplemental)
+## Internet of Things
+The Internet of Things is a system of interrelated computing devices, mechanical and digital machines, objects, animals or people that are provided with unique identifiers and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction.
+
+### IoT Hub
+It's a hub to collate data feeds from all your things. It's a backend, this system receives the data and manages it. It can receive data from billions of devices.
+
+### IoT Hub - Features
+* Managed and Secure
+* Ease of Deployment
+* Platform-as-a-Service
+* Scaling and Authentication
+
+### IoT Central
+* Application Platform as a Service (aPaaS)
+	* Simplify and speed up the implementation of your IoT solution
+* No Coding Needed
+	* You don't have to know how to write code to deploy your IoT project. Receive feeds from devices and focus on metrics and business value
+* Pre-made Containers
+	* Use any of the hundreds of connectors that are ready to use in IoT Central
+
+### Solutions
+* IoT Hub
+	* PaaS solution that provides more control over the IoT data collection and processing
+* IoT Central
+	* aPaaS solution that provides pre-made IoT connections and dashboards to get set up quickly
+
+### Internet of Things Azure Sphere
+An all-in-one solution for IoT devices on Azure.
+* Specific Hardware
+	* You can only use hardware and chipsets certified by Microsoft for use on Azure
+* Security
+	* Specialized security service that manages maintenance, updates, and general control
+* Operating System
+	* Custom made for Azure Sphere devices. Connects to the Sphere Security Service
+
+
+## Big Data
+### Big Data - Moving Definition
+* Data from Millions of Devices
+* The definition of how big " Big Data" is changes as the industry can process more and more data
+
+### Business Value
+Big Data = Better service, better products, more profits
+
+### Data Lake Analytics
+* Large Amounts of Data
+	* A data lake is a very large body of data
+* Parallel Processing
+	* Two or more processes or computers processing the same data at the same time. Data Lake Analytics includes parallel processing
+* Ready to Go
+	* Servers, processes and any other needed services are ready to go from the start. Jump straight into the data analytics
+
+### HDInsights
+* Similar to Azure Data Lake Analytics
+* Open Source, which is free and community supported
+* Includes Apache Hadoop, Spark, and Kafka
+
+### Azure Databricks
+* Based on Apache Spark, a distributed cluster-computing framework
+* Run and process a dataset on many computers simultaneously
+* Databricks provides all the computing power
+* Integrates with other Azure Storage services
+
+### Azure Synapse Analytics
+* Azure's data warehouse offering
+* Used to be Azure SQL Data Warehouse
+* Used for reporting and data analysis
+* Only limited by your scope
+* Use Synapse SQL language to manipulate the data
+
+### Outcomes
+* Speed
+	* Speed and efficiency of processing large amounts of data, provides real value
+* Cost Reduction
+	* Save large amounts of money on storage and processing, by using a Big Data solution in the cloud
+* Better Decision Making
+	* Immediate data processing and analysis in-memory means you can make better decisions, and make them faster
+* New Products and Services
+	* Understand what customers want and provide them with much better products and services
+
+
+## Machine Learning
+Artificial Intelligence is the capability of a machine to imitate intelligent human behavior. Through AI, machines can analyze images, comprehend speech, interact in natural ways, and make predictions using data.
+
+### Machine Learning/AI
+* Models
+	* The definition of what your machine learning application is learning. A model is a set of rules of how to use the data provided. The model finds patterns based on the rules
+* Knowledge Mining
+	* Use Azure Search to finding existing insights in your data. File relationship, geography connections and more
+* Built-in Apps
+	* Azure has a number of built-in apps that you can use for machine learning and AI straight away. These include cognitive services and bot services
+
+### Azure Bot Service
+Azure PaaS offering that lets you build bots for Q&A services, virtual assistants, and more.
+* Code or Visual
+	* Create a bot using the visual editor or programming
+* Language
+	* Let users talk to your bot with natural language and speech integration
+* Integration
+	* Integrate the bot with other services, like Facebook Messenger, Teams, Twilio, and more
+* Branding
+	* Use your own branding and own the data the bot uses and produces
+
+### Azure Cognitive Services
+* Vision
+	* You can use the vision service to recognize, identify, and caption your videos and images. Automatically
+* Decision
+	* Apps can make decisions based on content. Detect potential offensive language, detect IoT anomalies and leverage data analytics
+* Speech
+	* Automatic speech-to-text transcription. Speaker identification and verification
+
+### Azure Machine Learning Studio
+* Supports all Azure Machine Learning tools
+* Pre-made modules for your project
+* Use for real-world scenarios, such as Twitter sentiment analysis, photo grouping and movie recommendations
+
+### Machine Learning Services
+* End-to-End Service
+	* The service to use AI and machine learning almost anywhere on Azure
+* Tooling
+	* The Machine Learning Service is a collection of tools to help you build AI application
+* Automation
+	* Azure automatically recognizes trends in your application and creates models for you
+
+
+## Serverless
+### Are there no servers?
+Yes, there are servers. You just don't manage them, it's extreme PaaS.
+
+### Azure Functions
+* Golden Oldie
+	* It's the first "serverless" service on Azure. The Azure service most will start with when exploring serverless architecture
+* Single Task
+	* It's called function as only a single task is performed every time. The function only runs once for each invocation
+* Basic Compute Unit
+	* It's a fundamental compute action and can be run millions of times per second if needed
+
+### Logic Apps
+* Connect Systems
+	* Connect systems both inside and outside of the Azure platform. Integrate not only apps, but also data flows, services and entire systems
+* Automation
+	* A lot of ways to schedule, automate and orchestrate tasks and processes
+* Quick Start
+	* No coding required to get started straight away. You just need access to your apps to integrate
+
+### Event Grid - What is an event?
+An event is when an application wants the world (other connected applications) to know that something happened. It could be the placing of an order, for example. How do you get that event to the applications that need to know? This is where Event Grid comes in. Event Grid is a big network of connections to any service that wants it. You can connect most Azure products to it, and when they're connected, events are sent to Event Grid from which connected services can receive the events.
+
+### Azure Event Grid
+* Routing Service
+	* Event Grid is a routing service for sending and receiving events between applications
+* Serverless
+	* No management of infrastructure components. Create a Azure Event Grid and start connecting services
+* Ease of Use
+	* Event Grid makes complex architecture simpler
+
+### Exam Tips
+Serverless approaches work extremely well with cloud services. ACG is all serverless.
+* Yes, there are servers (they just aren't yours)
+* Azure Functions are the most basic of compute tasks. Does one function then dies until next time it's called
+* Logic Apps are a quick and simple way to integrate systems and applications inside and outside of Azure
+* Event Grid is a routing service for passing events between applications that need to know about the events
+
+
+## DevOps
+DevOps is the work between development and production.
+
+DevOps is at its core about people: how developers, engineers and system administrators organize themselves and work as a team to deliver better products faster.
+
+### Azure DevOps
+* Azure Boards
+	* Keep track of work tasks, timelines, issues, planning and much more. Project managers love this part
+* Azure Pipelines
+	* Produce and test your software automatically and continuously
+* Azure Repos
+	* Store source code for your application securely in a managed way. Developers are big fans of this part
+* Azure Test Plans
+	* Design tests of applications to implement automatically. Quality assurance engineers love this
+* Azure Artifacts
+	* Share applications and code libraries with other teams inside and outside your organization
+And it's FREE!
+
+### Azure DevTest Labs
+* Environment Management
+	* Allow developers and engineers to create environments for test and development
+* Cost Management
+	* You won't incur unexpected costs and will even minimize waste of resources on your account
+* Templates
+	* Tailor your development and test environments and reuse them with templated deployments
+
+### GitHub and GitHub Actions
+* GitHub
+	* Acquired in 2018 by Microsoft
+	* code repository service for lots of big and small projects
+	* A favorite among open-source communities
+	* Microsoft themselves are one of the biggest users of GitHub
+* GitHub Actions
+	* Very similar to Azure Pipelines
+	* Build code, test code, and publish code
+	* Works with almost any platform, such as AWS, GCP, and many more
+
+
+## Chapter 9 Summary
+### Azure Solutions
+* Internet of Things (IoT)
+	* IoT is a network of millions of connected devices that function without human intervention. IoT Hub collates and manages data feeds as a PaaS product. IoT Central is a SaaS offering with templates and dashboards for a quick start
+* Big Data
+	* Processing and storage of very large data sets. Azure has Data Lake Analytics and HDInsight. This can lead to reduced cost, better decisions, and new products
+* Machine Learning
+	* Use rules and models to train your AI implementation. Azure Machine Learning Studio has pre-made models and tools to help you get started. Azure Machine Learning Service is a collection of tools
+* Serverless
+	* You are using someone else's servers. Azure Function is a single unit compute. Azure Logic Apps can connect data feeds and applications. Azure Event Grid is a network to route events between applications
+* DevOps
+	* Azure DevOps has 5 tools: Boards, Pipelines, Repos, Test Plans, and Artifacts. Use one or more in your workflow. Azure DevTest Labs lets you create full development and test environments easily and cost efficiently. GitHub and GitHub actions are tools that are similar to Azure DevOps
+
+
+------
+
+
+# Chapter 10 - Securiy
+## Defense in Depth
+### On-Premises Defense
+* Physical Hardware
+	* You are responsible for the security of the hardware, buildings, and staff
+* Layers of Defense
+	* You will have several layers of defense, as with a castle, such as swipe cards, security guards, firewalls, and more
+* It's Up to You
+	* You own the infrastructure, so you are responsible for adequate defense of hardware and data
+
+### Azure
+* Physical
+	* Identity and Access
+		* Perimeter
+			* Network
+				* Compute
+					* Gateways and Firewalls
+						* Data
+
+
+## Securing Network Connectivity
+### Firewall
+* Rules
+	* A firewall defines rules for what kind of traffic can and cannot access the device or service behind it
+* Variations
+	* Firewalls comes as hardware and software versions. They can suit any type and size of network
+* Critical Part
+	* Any network that take security serious will have a firewall
+
+### Distributed Denial of Service Attacks - History
+* U.S. Banks
+	* In 2012, 6 U.S. banks were flooded with 60Gb of traffic every second
+* CloudFlare
+	* In 2014, CloudFlare was attacked with 400Gb of traffic per second
+* GitHub
+	* In 2018 GitHub experienced 1.35Tb of traffic per second. A new record for DDoS attacks
+
+### DDoS Protection Service
+* Many Internet-Connected Devices
+	* A lot of computers and other connected devices target a single website to make it stop. GitHub had a 127M requests per second attack
+* Protection
+	* Detects the DDoS attack and deflects it. Various levels of protection depending on scenario
+* No Downtime
+	* There is no interruption to your service at all. Azure will mitigate the attack globally
+
+### Network Security Groups (NSG)
+* Resource Firewall
+	* Personal resource firewall. Attach to virtual network, subnet or network interface
+* Rules
+	* A NSG determines who can access the resources attached to it, using rules for inbound and outbound traffic
+
+### Network Security Group
+For example, if you have a virtual machine that's on a virtual network, the network can be behind a firewall protecting everything on the network, and then the VM can have its own network security group to define specific rules for just that machine.
+
+### Application Security Groups
+* Protects Application Infrastructure
+	* Focus the security on the application rather than the IP endpoint
+* Natural Extension
+	* Group VMs and virtual networks into logical application groups and apply an application security group
+
+
+## Public and Private Endpoints
+### Public Endpoints = Publicly Reachable PaaS Services
+Default: Managed (PaaS) services reachable over the public internet
+* Virtual network -> PaaS over public internet
+* Also exposed to the public
+* Problem with sensitive resources
+What if we want to limit or remove public exposure?
+Solution: Two available solutions: "Good" and "Better"
+* "Good" = service endpoints
+* "Better" = private endpoints
+
+### Service Endpoints: "Good" Solution
+Privately connect VNet subnet to Azure PaaS services
+* Direct connection from subnet to Azure PaaS services
+* Connects over Microsoft's private backbone (not over public internet)
+
+Configure service to only allow traffic from service endpoint-enabled subnet
+* Can also restrict access to specific public IP addresses
+
+### Limitations of Service Endpoints
+* Secure access to VNets only
+	* No private on-premises access
+	* Must allow on-premises access over public IP
+* PaaS public endpoint still exists
+	* Not truly private
+* Service endpoints provide access to an entire service
+	* For example, provides private access to all of Azure Storage, not just a single storage account
+
+### Private Endpoint: "Better" Solutions
+Managed network interface
+* Private connection to specific instance of a service
+* e.g., single storage account, SQL instance, etc
+
+Available over connected networks
+* Hybrid/on-premises networks
+* Peered virtual networks
+
+Can completely disable public access to a connected service
+* Truly private
+* Public endpoint disabled
+
+### Scenario
+VPN connection from home office to an Azure VNet named 'hub-vnet'
+
+Must privately access sensitive Azure SQL database from home office
+* Disable public internet exposure
+
+Solution: A private endpoint
+* Privately connects hub-vnet to Azure SQL database
+* Private access from home office
+* Can also disable public access for truly private connection
+
+
+## Microsoft Defender for Cloud (formerly Azure Security Center)
+### Overview
+* It provides threat alerts
+* It's ready for hybrid architectures
+* Each VM has an agent installed that sends data
+* Azure analyzes the data and alerts you if necessary
+
+### Highlights
+* Policy and compliance metrics
+* A secure score to encourage great security hygiene
+* Integrate with other cloud providers (requires Azure Arc)
+* Alerts for resources that aren't secure
+
+### Using Defender for Cloud
+* Define Policies
+	* Set up policies for Azure to monitor resources from. A policy is a set of rules used to evaluate a resource. Use predefined policies or create your own
+* Protect Resources
+	* Actively protect your resources through monitoring your policies and their outcomes
+* Respond
+	* Respond to any security alerts. Investigate all of them, and then go back to step 1 to define new policies to account for the alert
+
+
+## Key Vault (Supplemental)
+### Current Status
+Attackers know where you keep your keys.
+
+### Scenario
+You have a database with some valuable business data in it. While you use the data successfully internally, you also want to share access to other trusted outside third parties. However you don't want to just give them the username and password to access the database. Instead, you place the password in Azure Key Vault and then provide access to individual applications. The application can identify itself, and then Azure Key Vault grants access to the database.
+
+### Azure Key Vault
+* Secure Hardware
+	* The Key Vault hardware is secure too. Not even Microsoft can access the keys in it
+* Application Isolating
+	* An application can't pass on secrets, nor access another application's secrets
+* Global Scaling
+	* Scale globally like any other managed Azure service
+
+
+## Azure Information Protection
+* Classify data
+	* Classify data according to how sensitive it's either using policies, or manually
+* Track Activities
+	* Track what's happening with shared data and revoke access if needed
+* Share Data
+	* Safely share data as you can control who edits, views, prints and forwards it
+* Integration
+	* Controls for document access is integrated with common applications and tools, such as Microsoft Office
+
+
+## Microsoft Defender for Identity (formerly Azure Advanced Threat Protection) (Supplemental)
+### Users Are Unreliable
+You really can't trust users.
+
+### The Constant Threat
+If you have anything of value, it's almost guaranteed someone will probably want to get their hands on it. One way could be to target users specifically. Users are often the weakest link in an organization, and they can be tricked, coerced, and manipulated to provide details to assist attackers and to get them access to the corporation.
+
+### Microsoft Defender for Identity
+* Monitor Users
+	* Analyze user activity and information. This includes any permissions and memberships of groups
+* Baseline Behavior
+	* Record what a user's normal behavior and routine is. Any activity outside this routine will be logged as suspicious
+* Suggest Changes
+	* Microsoft Defender for Identity will suggest changes to conform with security best practices in order to reduce risks
+
+### Cyber-Attack Kill Chain
+* Reconnaissance
+	* If a user is searching for information about other users, device IP addresses and more, Microsoft Defender for Identity will raise alerts
+* Brute Force
+	* Any attempts to guess user credentials will be identified and flagged
+* Increasing Privileges
+	* Any attempt by a user to gain more privileges will be flagged. This could be through anther user's login
+
+
+## Azure Sentinel (Supplemental)
+### The What and the How
+Sentinel is a security information and event management (SIEM) tool.
+* Step 1: Data Collection
+* Step 2: Aggregation and Normalization
+* Step 3: Analysis and Threat Detection
+* Step 4: Things Happen (Mostly Magic)
+* Step 5: Take Action
+Sentinel will do 90% of the heavy lifting before you even start investigating a potential security alert.
+
+### Benefits and Features
+* Behavioral Analytics
+	* Sentinel uses artificial intelligence to learn if any detected behavior is unusual
+* AWS Integration
+	* Data from AWS services can be fed directly into Sentinel. This gives you one approach for threat detection across your multi-cloud infrastructure
+* Cloud Scale
+	* Sentinel can take advantage of the Azure cloud scale and deliver more accurate results fast
+
+
+## Azure Dedicated Hosts (Supplemental)
+### Dedicated Hosts
+* Hardware Control
+	* You get control of an entire physical server on Azure
+* Yours and Yours Alone
+	* Physical layer isolation means you won't get any "foreign" VMs on your dedicated host
+* Maintenance
+	* Reduce impact on your system by choosing when to install updates to your dedicated host
+
+### Cloud Benefits
+* Compliance
+	* Take advantage of the stringent Azure compliance in combination with managing your own hardware
+* Global Infrastructure
+	* Availability zones, fault isolation, high availability, and scale sets come as standard. No optional extras here
+* OS of Your Choice
+	* Choose Windows, Linux, or SQL Server on a range of VM sizes. Even save money by using your own licenses
+
+
+## Chapter 10 Summary
+### Security Summary
+* Defense in Depth
+	* You need multiple layers of defense for your infrastructure. Azure has physical, identity, perimeter, network, compute, gateways and firewalls, and data as protection layers
+* Securing Network Connectivity
+	* A firewall controls the data coming and out of a network based on rules. Azure protects against DDoS attacks with no downtime to you. A network security group protects a subnet or virtual machine
+* Public and Private Endpoints
+	* Most Azure PaaS services are publicly reachable by default. Private endpoints enable private access to PaaS services. Can also disable public access for truly private services
+
+* Microsoft Defender for Cloud (formerly Azure Security Center)
+	* Monitor security hygiene for VMs. Define policies to protect your resources better and respond to incidents
+* Azure Key Vault
+	* A secure way to share access to applications and resources with third parties without ever revealing any credentials
+* Azure Information Protection
+	* Share files and data inside and outside of Azure and still maintain control over that data. You can control who views, edits, prints, and more
+
+* Azure Sentinel
+	* Collect, aggregate, analyze, and present security issues automatically for you to take action
+* Azure Dedicated Hosts
+	* Your own dedicated Azure hardware to install Windows, Linux, or SQL Server VMs on. Gives you control without losing cloud benefits like scaling, scale sets, fault isolation, and availability zones
+* Microsoft Defender for Identity (formerly Advanced Threat Protection)
+	* You secure and manage users of your organization. Monitor users' behavior, create a baseline of this behavior, and report on any anomalies from it
+
+
+------
+
+
+# Chapter 11 - Monitoring and Management
+## Governance
+Governance validates that your organization can achieve its goals through effective and efficient use of IT.
+
+### What's a policy?
+A policy is a set of rules, rules to make sure that standards and agreements within your corporation are followed and that resources are compliant with these policies.
+
+### Role-Based Access Control (RBAC)
+* Define User Access
+	* You can define specific user access to individual resources
+* Minimum Access
+	* RBAC can enable minimum access necessary to resources. This ensures only users with valid access can manage resources
+* Target Specific Use Cases
+	* Be very explicit about uses and access. For example, allow an application access to certain resources or allow a user to manage resources in a resource group
+
+### Role-Base Access Control - Role Assignment
+* Security Principal
+	* An object representing an entity such as a user or group, which can access the resource
+* Role Definition
+	* A collection of permissions such as read, write, and delete
+* Scope
+	* The resources the access applies to. Specify which role can access a resource or resource group
+
+### Locks
+* Assigning
+	* Assign a lock to a subscription, resource group, or resource
+* Types
+	* A lock can be of two types. Delete, where you can't delete the locked object. Read-Only, where you can't make any changes to the object
+* Locked Means Locked
+	* A lock needs to be removed before the locked actions can be performed again
+
+### Azure Blueprints
+Blueprints are templates for creating Azure resources.
+* Rules and regulations
+	* Brand New Azure
+		* Use Blueprints
+			* Resource templates
+			* Role Based Access Control (RBAC)
+			* Policies
+			* Samples for common regulations
+
+### Cloud Adoption Framework
+* Collection of Documents
+	* Lots of resources to guide you through the cloud adoption process
+* Guidance
+	* Help to define strategies for adoption, planning the move, "being ready" for the cloud, adoption reasons, governance practices, and managing a living, breathing cloud architecture
+* Governance
+	* Key to the cloud adoption process is governance of the process. The Cloud Adoption Framework is a big step in that process
+
+### Exam Tips
+Governance keeps you complaint and out of trouble.
+* Azure Policy ensures that policies applied to resources are compliant
+* A policy is a set of rules to ensure complaint resources
+* Role Based Access Control (RBAC) ensures user compliance through assigning a role to a user. A role is a combination of security principal, role definition and scope
+* Locks make sure that subscriptions, resource groups or resources are either not modified or not deleted
+* Blueprints are templates for creating standard Azure environments
+* The Azure Advisor for Security Assistance is part of the Security Center
+
+
+## Azure Monitor
+"Telemetry is the collection of measurements or other data at remote or inaccessible points and their automatic transmission to receiving equipment for monitoring."
+
+### Azure Monitor
+* Constant Feed
+	* Most Azure services feed telemetry data into Azure Monitor. Even on-premises services can send telemetry data to Azure Monitor
+* Fully Managed
+	* Azure Monitor is centralized and fully managed. You can analyze all the data from one place
+* Query Language
+	* Full access to an interactive query language to learn about the telemetry data
+* Machine Learning
+	* Predict and recognize problems faster with built-in machine learning
+
+### Outcomes
+* Maximize Performance
+* Maximize Availability
+* Identify Issues
+
+
+## Monitoring Tools
+### Monitor All the Things!
+Azure includes multiple monitoring tools to gain full visibility into your Azure environment:
+* Log Analytics
+* Application Insights
+* Azure Monitor Alerts
+
+### Log Analytics
+* Azure Monitor generates A LOT of logs and telemetry data
+* Log Analytics stores and queries (or analyzes) that data to gain valuable insights
+	* Examples:
+		* VM disk size
+		* VPN connection logs
+		* Long term analysis
+		* Combine metrics for complex queries
+
+### Queries in Log Analytics
+* Choose between pre-built and custom queries
+* Queries in Kusto Query Language (KQL) format
+  
+### Application Insights
+* Performance insights for web applications
+* Answers questions:
+	* "How are users using out app?"
+	* "Where are our performance bottlenecks?"
+	* "Why are we getting website errors?"
+
+### Application Insights (Continued)
+* Web apps only
+* Available for App Service, Azure VMs, and non-Azure resources
+	* VMs require installed agent
+* Application Insights scenario
+	* Find performance bottlenecks in web application
+	* Discover how users are using the website
+
+### Azure Monitor Alerts
+When something breaks, alert someone to fix it!
+
+Notifications in response to unexpected events
+* Examples:
+	* VM unresponsive
+	* VM using excessive CPU
+	* Application latency over 500 ms
+
+### Alert Components
+* Alert Rule
+	* Monitored resource
+	* Monitored telemetry
+	* Conditions to trigger alert
+	* Assigned severity
+* Rule Example
+	* Monitored resource: VM
+	* Monitored telemetry: CPU utilization
+	* Condition: > 90% CPU for 5 minutes
+	* Severity: 2 - Warning
+* Action group = action(s) taken when rule is triggered
+	* Notification targets
+		* Email/SMS to support personnel
+		* Send to automation workflows (Logic Apps, Azure Functions, and more)
+In all scenarios, when something is not working as expected, Azure Monitor alerts inform the right group to do something about it!
+
+
+## Azure Service Health
+### Maintenance
+Azure needs to be updated and maintained just like any other computing infrastructure.
+
+### Azure Service Health
+* Dashboard
+	* A personalized dashboard to highlight service issues affecting your resources
+* Custom Alerts
+	* Get notified of planned and non-planned outages. Alerts are simple to set up and customize
+* Real-Time Tracking
+	* Track any alerts and issues in real-time and get full reports once resolved
+* Free Service
+	* The Azure Service Health service is completely free
+
+
+## Compliance (Supplemental)
+### Industry Regulations
+* General Data Protection Regulation
+	* Main objective is to protect individuals and processing of their data. It gives control of personal data back to the individual, instead of the company owning it. Companies are required to implement a lot of tools for consumers to control their data
+* ISO Standard
+	* Many different ISO categories, such as compliance with quality and customer satisfaction. Most common is ISO 9001:2008. Also includes food safety and environmental management
+* NIST
+	* National Institute of Standards and Technology. Focuses purely on the tech industry. Developed primarily for US Federal agencies. Compliance with NIST means compliance with multiple Federal US regulations
+
+### Azure Compliance Manager
+Azure knows about compliance and resources, and can give you recommendations through the Compliance Manager.
+
+* Recommendations
+	* Get recommendations for ensuring compliance with GDPR, ISO, NIST, and others
+* Tasks
+	* Assign compliance tasks to team members and track progress
+* Compliance Score
+	* Chase a perfect score to be 100% compliant
+* Secure Storage
+	* Upload documents to prove compliance and store them securely
+* Reports
+	* Get reports of compliance data to provide to managers and auditors
+
+### Azure Government Cloud
+* Dedicated Regions
+	* If you are a US government body or contract for one, you can get access. The Government Cloud consists of dedicated separate datacenters
+* Exclusivity
+	* You are a guaranteed only screened personnel from US federal, state and local government have access
+* Compliance
+	* Ensure compliance with required US government agencies, and level 5 Department of Defense approval
+* Azure Benefits
+	* You get standard Azure cloud benefits: high availability, scalability and managed resources
+
+### China Region
+* Located in China
+	* Azure datacenter is physically located within China and has no connection outside of China, including other Azure regions
+* Data is Kept in China
+	* All customer data is kept inside Chinese borders. Certain global Azure services won't work fully
+* Compliant
+	* You are ensured compliance with Chinese regulations at all times
+
+### Exam Tips
+Compliance is not negotiable.
+* GDPR, ISO, and NIST are regulations and standards to ensure compliance with applicable legislation
+* Azure Compliance Manager provides recommendations, tasks to assign team members, a compliance score, secure document storage, and reports
+* Azure Government Cloud provides dedicated datacenters to US Government bodies. Compliant with US federal, state, and local requirements
+* Azure China region contains all data and datacenters within China. Complies with all applicable Chinese regulations
+
+
+## Privacy (Supplemental)
+### Azure Privacy
+* Azure Information Protection
+	* Classify, label, and protect data based on data sensitivity
+* Azure Policy
+	* Define and enforce rules to ensure privacy and external regulations
+* Guides
+	* Use guides on Azure to respond and comply with GDPR privacy requests
+* Compliance Manager
+	* Make sure you are following privacy guidelines
+
+
+## Trust
+### Trust Center & Service Trust Portal
+* Trust Center
+	* Learn about Microsoft's effort on security, privacy, GDPR, data location, compliance and more. A hub for more information about trust in each product and service
+* Service Trust Portal
+	* Review all the independent reports and audits performed on Microsoft's products and services. Azure complies with more standards than any other cloud provider
+
+
+## Azure Arc
+
+### The Challenge of Managing Complex Environments
+Computing resources in multiple locations
+* Microsoft Azure
+* On-Premises
+* Other Clouds (AWS, GCP)
+
+Each computing source uses its own management tools
+* More locations = more management overhead
+* Cannot apply Azure governance policies to non-Azure resources
+
+What if we could:
+* Manage both Azure and non-Azure resources in the same interface?
+* Apply Azure governance policies to non-Azure resources?
+Solution: Azure Arc
+
+### What's Azure Arc?
+* Technical definition:
+	* Centralized governance and management for on-premises and multi-cloud computing resources
+* Simplified definition:
+	* Manage non-Azure resources as if they were in Azure
+	* Extend Azure cloud management and services to non-Azure locations
+
+### How It Works
+How Azure Arc works is that it effectively extends the Azure control management to our non-Azure locations. It works by installing an agent on these non-Azure computing resources to bring it into Azure's control plane. As a result, you Azure access and management is effectively extended from Azure to your non-Azure resources using Azure Arc as your bridge or connection between your non-Azure locations and Azure as well.
+
+### Benefits of Azure Arc
+* Manage Azure and non-Azure resources in the same place
+* Manage non-Azure Kubernetes clusters
+* Deploy Azure-managed database services to non-Azure locations
+	* Example: Azure SQL Managed Instance
+* Manage and protect non-Azure servers
+	* Monitor non-Azure OSs alongside Azure VMs
+	* Protect with Microsoft Defender for Cloud
+	* Apply Azure Automation runbooks
+* Apply Azure governance
+	* RBAC
+	* Azure Policies
+	* Azure Blueprints
+* Deploy Azure serverless services to non-Azure hardware
+	* Azure App Service
+	* Azure Functions
+	* Azure Logic Apps
+	* And more
+
+### Scenario
+You maintain servers in both Azure and an on-premises datacenter.
+* You want to apply Azure management services (Azure Blueprints, Azure Policy) to these servers
+
+Solution: Azure Arc
+
+
+## Chapter 11 Summary
+### Monitoring and Management
+* Governance
+	* Azure Policy, role-based access control (RBAC), resource locks, and Azure Blueprints
+* Azure Monitor
+	* Collect telemetry data from resources, which you can analyze. Maximize performance and availability and identify issues
+* Monitoring Tools
+	* Gain insights and receive alerts when something goes wrong with Log Analytics, Application Insights, and Azure Monitor alerts
+* Azure Service Health
+	* Notifies you about any planned and unplanned incidents on the Azure platform
+* Compliance
+	* Comply with GDPR and adhere to ISO and NIST standards. Use Compliance Manager to manage compliance. Azure Government and China regions
+* Privacy
+	* Core part of Azure and its products. Azure Information Protection, Azure Policy, and the GDPR guide are all privacy tools
+* Trust
+	* The Microsoft Trust Center is where you can find out what Microsoft does to keep your trust. The Service Trust Portal is where you can find audit reports and certificates awarded to Azure
+* Azure Arc
+	* Extend Azure's control plane to your non-Azure resources. Apply Azure governance to Azure and non-Azure resources
+
+
+------
+
+
+# Chapter 12 - Pricing
+## Introduction
+### Pricing Structure
+* On-Premises
+	* Utilization is well below 100%
+	* No monthly costs
+	* Large upfront cost
+	* Pay for utilities
+* Azure
+	* You don't own the hardware
+	* Pay for number of hours you use
+	* Pay more for more resources
+	* Service payment is tiered
+	* Location can affect price
+
+
+## Subscriptions
+### Billing & Pricing
+* Subscription
+	* VM
+	* Event Hub
+	* Data Lake
+	* HDInsight
+All resources belong to a subscription
+
+### Subscription
+* Multiple Subscriptions
+	* Any Azure account can have multiple subscriptions. Useful for organizing who pays for what
+* Billing Admin
+	* One or more users can be a "billing admin", which manages anything to do with billing and invoicing on Azure. Ensures separation of responsibility
+* Billing Cycle
+	* A billing cycle on Azure is either 30 or 60 days
+
+### Offer Types
+Offer types is the type of subscription. There are many different ones at any one time.
+* Pay-as-you-go
+* Support Plans
+* Free trial
+* Visual Studio Professional subscribers
+* Visual Studio Test Professional subscribers
+* MSDN Platforms subscribers
+* Enterprise Dev/Test
+* Etc
+
+### Management Groups
+* Group Subscriptions
+	* Take action across subscriptions in bulk. Very useful in large organizations with many subscriptions
+* Organize
+	* Manage access, policies and compliance in bulk. E.g. have management group per country or department
+* Billing Logic
+	* You maintain the billing associated with the right budgets. Nest management groups to indicate hierarchy and relationship
+
+
+## Cost Management
+### Buying Azure Services
+You can't use Azure without buying services and products. But there are many to buying services.
+
+### Free Accounts
+* Yes, it's free
+* Benefits
+	* Many free services, as Microsoft wants you to get a taste of what Azure has to offer. Virtual Machines, databases, storage, and more
+* Always Free
+	* Some services are always free for everyone. Some totally free, some partially free up to a threshold
+
+### Free Accounts
+Your first Azure project could be free.
+* Need a valid credit card
+* Only one free account per Microsoft Account
+
+### Azure Cost Management
+* Azure Portal
+	* Access the Azure Cost Management tool from within the Azure Portal. get a detailed view of current and projected costs. Azure Cost Management is free and included with all Azure subscriptions
+* Reports & Recommendations
+	* Get detailed spending reports and recommendations on how to save on costs and analyze them
+* Optimization
+	* Optimize your current resources to save money and monitor any AWS charges too
+
+### Spot VM
+* Save money by using unused computing capacity
+* The VM can be evicted at any time by Microsoft if they need the compute power back
+* Use for interruptible non-critical workloads
+* Use with Azure scale sets
+* Set a max price for the Spot VM
+
+
+## Pricing Factor
+### Influences on Pricing
+* Resource Size
+	* Different sizes of resources will have different pricing. A more powerful virtual machine will cost more
+* Resource Type
+	* There is a very big difference in the amount of hardware resources needed for various types of resources, as well as complexity
+* Location
+	* Different Azure locations have different prices for services. Exchange rates, labor costs and more have an influence on the price
+* Bandwidth
+	* The bandwidth your services are using incurs a cost as well
+
+### Zones & Bandwidth
+Azure has three billing zones in the world. Each of these zones include many Azure regions. Any data transfer between Azure services located in the same zone is free. Any data transfer between two different billing zones is charged. This is also called ingress, data in, and egress, data out, data. Ingress data is always free, but egress data (data going out) has a cost with it when it's transmitted between two different billing zones.
+
+### Pricing Calculator
+* Choose from all available Azure services
+* Select resource properties, such as for a Virtual Machine
+* Monthly cost estimate
+* Export estimate for further analysis and use
+
+### Total Cost of Ownership Calculator
+* Get an estimate of the total savings you could get for moving your on-premises resources to Azure
+* Estimate total savings over a period of time by using Azure
+* Comprehensive reports to share with stakeholders
+
+
+## Best Practices
+### Spending Limits
+* Default Limit
+	* Some Azure accounts with monthly credits to use will have default spending limits. When the credits are used, the limit kicks in
+* No Increase
+	* When the credits are gone, either remove the limit entirely or leave it in effect
+* No Spending Limit
+	* Pay-as-you-go accounts have no spending limit functionality
+
+### Quotas
+* Property Limit
+	* A quota is a limit on a certain property of an Azure service. For example, a maximum of 100 namespaces for Event Hub
+* Ensure Service Level
+	* The quotas are necessary to ensure Azure can maintain their high service level
+* Quota Change
+	* If you need to increase the quota for a particular service, you can ask Microsoft to increase them
+
+### Tags
+* Tags are non-functional labels that attach to a resource or resource group
+* Use as many tags as you want
+
+### Tags - Continued
+* Identify Roles
+	* Protect sensitive data by defining which roles can access a resource
+* Related Resources
+	* To make bulk processing and updating easier, define which resources are related
+* Filter
+	* Filter resources per project, customer or for reporting purposes
+* Unambiguous
+	* Create a list for tags used that includes: description, tag name, and potential values
+
+### Pay-as-you-go
+Pay-as-you-go = Expensive
+
+### Reserved Instances
+Reserved instances can save you a lot of money. Not all Azure services can be reserved.
+
+### Reserved Capacity
+* 1-or 3-Year commitment
+	* Azure SQL
+		* Save up to 80%
+	* Synapse Analytics
+		* Save up to 65%
+	* Cosmos DB
+		* Save up to 65%
+	* Redis Cache
+		* Save up to 55%
+Change regions, scale up or down, apply it to multiple subscriptions, and cancel at any time.
+
+### Azure Hybrid Benefits
+Azure will let you use existing licenses instead of forcing you to purchase new ones with every new VM or server.
+
+### Advisor
+The Advisor portal gives you best practices advice in general through recommendations.
+
+
+## Chapter 12 Summary
+### Pricing
+* Subscriptions
+	* Every resource belongs to a subscription. An Azure account can have multiple subscriptions. Billing admins control costs. Management groups help you keep track of many subscriptions in an account
+* Cost Management
+	* Use free accounts and Azure Cost Management to keep costs as low as possible and optimize resources
+* Pricing Factors
+	* Resource size, resource type, location of the service and bandwidth used all affect the price of a service. Azure Pricing Calculator and Total Cost of Ownership Calculator can help predict costs
+* Best Practices
+	* Use spending limits, quotas for services, tags to order resources and reserved instances to manage costs and get the best price
+
+
+------
+
 

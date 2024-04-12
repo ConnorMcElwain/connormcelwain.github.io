@@ -47,4 +47,3 @@ theme = 'gokarna'
     url = "https://github.com/ConnorMcElwain"
     weight = 5
     pre = "<span data-feather='github'></span>"
-    target = "_blank"

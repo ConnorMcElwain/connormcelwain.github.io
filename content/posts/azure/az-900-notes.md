@@ -2460,3 +2460,193 @@ The Advisor portal gives you best practices advice in general through recommenda
 ------
 
 
+# Chapter 13 - Support (Supplemental)
+## Plans
+There are five different support plans available in Azure:
+* Basic
+* Developer
+* Standard
+* Professional Direct
+* Premier
+
+### Inclusions - All Support Plans
+* 24/7 Access
+	* Around the clock access to billing and subscription support
+* Online Self-Help
+	* Azure documentation and white papers (guides on complex scenarios)
+* Forums
+	* Connect with other Azure users to ask and answer questions
+* Azure Advisor
+	* Best practice recommendations for multiple Azure services
+* Service Health
+	* Access to current issues and future planned maintenance on the Azure platform
+
+### Inclusions - Paid Plans
+* Developer
+	* $
+	* Technical Support: Bus. Hours Email
+	* Support Cases: Unlimited
+	* Azure Configuration: Guidance Troubleshooting
+	* Response Time: Sev. C: < 8 hours
+	* Architecture Sup.: General Guidance
+	* Operations Sup.: 
+	* Training: 
+* Standard
+	* $ $
+	* Technical Support: 24/7 Email/Phone
+	* Support Cases: Unlimited
+	* Azure Configuration: Guidance Troubleshooting
+	* Response Time: Sev. C: < 8 hours, Sev. B: < 4 hours, Sev. A: < 1 hour
+	* Architecture Sup.: General Guidance
+	* Operations Sup.: 
+	* Training: 
+* Professional Direct
+	* $ $ $
+	* Technical Support: 24/7 Email/Phone
+	* Support Cases: Unlimited
+	* Azure Configuration: Guidance Troubleshooting
+	* Response Time: Sev. C: < 4 hours, Sev. B: < 2 hours, Sev. A: < 1 hour
+	* Architecture Sup.: Arch. Guidance
+	* Operations Sup.: Onboarding Reviews
+	* Training: Webinars
+* Premier
+	* $ $ $ $
+	* Technical Support: 24/7 Email/Phone
+	* Support Cases: Unlimited
+	* Azure Configuration: Guidance Troubleshooting
+	* Response Time: Sev. C: < 4 hours, Sev. B: < 2 hours, Sev. A: < 1 hour
+	* Architecture Sup.: Customer Specific
+	* Operations Sup.: Tech reviews, Reporting, Tech Account Mng.
+	* Training: On-demand
+
+
+## Tickets
+A ticket is a support enquiry. A ticket is a unique identifier. A ticker is a single reference to an issue.
+
+### Submitting a Ticket
+* Submit a ticket through the Azure Portal
+* Choose one of four support ticket types
+* Fill in details about issue
+* Request is processed according to support plan
+
+
+## Channels
+### Support Channels
+* Azure Documentation
+	* A collection of thousands of product and service articles. They are written by the people that made the product and the community contributes
+* Forums
+	* Suits everyone from beginners to experts. Ask questions, answer some, and search for past knowledge being shared
+* Social Media
+	* Direct support from Azure and the teams behind each service. Ask Microsoft experts and community heroes
+
+
+## Azure on Q&A
+### Common Questions
+At the beginning, many questions are common. Azure on Q&A aims to answer these.
+
+### Azure on Q&A
+* No New Questions
+	* You can't add a new question or add to an existing one
+* Search
+	* Search the site by category, product, and free text. Links to Azure documentation and more
+* Complements Other Channels
+	* Not all answers are on Azure on Q&A, so use the other support channels too
+
+
+## Service Level Agreements
+A service level agreement is a contract between a service provider and a client. It's an agreement on a certain level of service you can expect. If a service is not working for more than an agreed period of time in a month, you can claim compensation from Microsoft. You pay for an SLA, to ensure the least possible downtime of a service.
+
+### Properties
+* Confidence
+	* Critical to ensure confidence in the uptime and reliability of services
+* Contract
+	* Contract between you and Azure stating Microsoft's commitment for uptime and connectivity
+	* Multiple SLAs
+		* There are many SLAs in Azure. Generally one SLA per product. You automatically use use the SLA for the service you use
+	* Complex
+		* SLAs can have various levels depending on the number of variety of services, which region you use, and much more
+	* Mandatory
+		* If you have an Azure account, the various SLAs apply. No SLAs for free products and services
+	* Improve SLA
+		* Having a backup of a service or resource, such as a VM in an availability set, can provide a better SLA
+	
+
+## Service Lifecycle
+### Gathering Customer Data
+Customers can provide valuable feedback.
+
+### Stages
+* Preview
+	* Private
+		* Only available to specific customers invited by the product team behind the service
+	* Public
+		* Available to all Azure customers. Enable preview features in the Azure Portal
+* General Availability
+	* Available to all Azure customers as a normal service, including SLA. Services become generally available when they are ready. Can be a gradual rollout to some regions first
+
+### Azure Updates
+Watch for previews, new features, and updates.
+
+
+## Chapter 13 Summary
+### Support
+* Plans
+	* Basic, developer, standard, professional direct, and premier tiers. The more you pay the more benefits and lower response times
+* Tickets
+	* A unique references for a support issue. Create tickets through the Azure Portal
+* Channels
+	* Use the Azure documentations, Azure forums and social media accounts to get free support from Microsoft and the community
+* Azure on Q&A
+	* A collection of the most common questions. Search the Azure Q&A site and find a lot of answers
+* Service Level Agreements
+	* A contract between you and Azure documentation Microsoft's commitment for uptime and connectivity
+* Service Lifecycle
+	* Azure services can be in private preview and public preview, before they become generally available. Watch the Azure Updates feed for new products, features and more
+
+
+------
+
+
+# Chapter 14 - Exam Preparation
+## Exam Overview
+### Time and Length
+* 60 minutes to complete exam
+* 44 various questions in total
+
+### Question Types
+* Multiple-Choice
+	* 3-6 options, but generally 4. Questions will have one or more correct answers
+* Statement
+	* Decide if a statement is correct or not. Replace an underline part with another answer if incorrect
+* Drag 'n' Drop
+	* Drag a number of steps into a correct order of use or execution
+* Hotspot
+	* Click on an image to select the right area. Could be selecting the correct service
+* Multiple True/False
+	* Three questions, one at the time. Can't go back and must answer each true or false
+You can go back to review any questions before completing the exam, except the first 6 questions. Because they are multiple true/false type questions, you can't review those once you've answered them.
+
+### Exam Parts
+* Describe Cloud Concepts
+	* This is 25-30% of the exam mark and chapter 2 of this course
+* Describe Azure Architecture and Services
+	* This is 35-40% of the exam mark and chapters 3-6, 8, and 10 of this course
+* Describe Azure Management and Governance
+	* This is 30-35% of the exam mark and chapters 1, 11, and 12 of this course
+
+### Options for Taking Exam
+* Test Center
+	* Select your preferred test center and book time and date online
+* Home or Office
+	* Proctored exam using webcam. You need to have appropriate microphone, webcam, and bandwidth
+
+### Exam Outcome
+* Immediate Result
+	* Know if you have failed or passed straight away. You need 700 out of 1000 points to pass
+* Official Record
+	* Your official Microsoft Learning profile will record your certificates. Get access to official certificates and badges
+* Retake an Exam
+	* You can retake any Microsoft exam 5 times per 12 month period. Certain mandatory wait periods do apply between each attempt
+
+
+------

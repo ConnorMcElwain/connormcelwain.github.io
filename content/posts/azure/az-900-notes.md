@@ -564,3 +564,475 @@ Azure Virtual Desktop is a completely virtualized version of Windows, meaning it
 
 
 ------
+
+
+# Chapter 5 - Networking
+## Virtual Network
+A virtual network (VNet) enables many types of Azure resources, such as Azure virtual machines, or VMs, to securely communicate with each other, the internet, and on-premises networks. A virtual network is virtual because, while you get access to it, you don't have any access to the hardware. Just like a virtual machine, it's yours to use, but the physical hardware is hidden away.
+
+### Address Space
+An address space is the range of IP addresses that are available. Every service or resource that is connected to a VNet will get its own unique address on that VNet within the address space. That's how services on the same VNet can find each other and communicate.
+
+### Subnets
+* Resource Grouping
+	* Group resources onto the same subnet to make it easier to keep an overview
+* Address Allocation
+	* More efficient to allocate addresses to resources on a smaller subnet
+* Subnet Security
+	* Use network security groups to secure individual subnets
+
+### Subnet Regions & Subscriptions
+* Regions
+	* A VNet belongs to a single region. Every resource on the VNet must be in the same region too
+* Subscriptions
+	* A VNet belongs to just one subscription, but a subscription can have multiple VNets
+
+### Cloud Advantages
+* Scaling
+	* Adding more VNets or more addresses to one is simple
+* High Availability
+	* Peering VNets, using a load balancer, or using VPN gateway all increase availability
+* Isolation
+	* Manage and organize resources with subnets and network security groups
+
+### VNet Peering
+This feature lets you connect 2 or more virtual networks in Azure. Traffic between virtual machines in a peered network uses the private Microsoft backbone network and never passes through the public internet. Just like if the VMs were on the same virtual network.
+
+### Peering Benefits
+* Low Latency, High Bandwidth
+	* Resources in virtual networks are connected with a low-latency, high-bandwidth connection
+* Link Separate Networks
+	* Resources in separate virtual networks can communicate with each other
+* Data Transfer
+	* Transfer data easily between subscriptions and deployment models in separate regions
+
+### Exam Tips
+A virtual network is a fundamental part of your Azure infrastructure.
+* An address space is range of IP addresses you can use for your resources
+* A subnet is a smaller network, which is part of your VNet. Use these for security and logical division of resources
+* A VNet is in a single region and single subscription
+* VNets in the cloud can scale, have high availability and isolation
+
+
+## Load Balancer
+### Load Balancer Description
+Load Balancer distributes new inbound flows that arrive on the Load Balancer's frontend to backend pool instances, according to rules and health probes.
+* Inbound Flows
+	* Traffic from the internet or local network
+* Frontend
+	* The access point for the load balancer. All traffic goes here first
+* Backend Pool
+	* The VM instances receiving traffic
+* Rules & Health Probes
+	* Checks to ensure backend instance can receive the data
+
+### Scenarios
+* Internet Traffic
+	* Balanced the load of incoming internet traffic into a system application
+* Internal Networks
+	* A load balancer works well with internal applications
+* Port Forwarding
+	* Traffic can be forwarded to a specific machine in the backend pool
+* Outbound Traffic
+	* Allow outbound connectivity for backend pool VMs
+
+
+## VPN Gateway
+### Virtual Network Gateway
+A virtual network gateway is composed of two or more virtual machines that've been deployed to a specific subnet you create, which is called the gateway subnet.
+
+### VPN Gateway
+A VPN Gateway is a specific type of virtual network gateway that is used to send encrypted traffic between an Azure virtual network and an on-premises location over the public internet.
+
+### Exam Tips
+VPN Gateways are instrumental in a hybrid cloud architecture.
+* A VPN Gateway is a specific VNet Gateway. It consists of two or more dedicated VMs
+* VNet Gateway + "vpn" becomes a VPN Gateway
+* Sends encrypted data between Azure and on premises network
+* Azure Gateway Subnets, secure tunnel and on-premises gateway makes up a VPN Gateway scenario
+
+
+## Application Gateway
+### Benefits
+* Scaling
+	* Scale the Application Gateway up or down based on the amount of traffic received
+* Encryption
+	* Comply with any security policies. Disable or enable traffic encryption to the backend
+* Zone Redundancy
+	* Span multiple availability zones and improve fault resiliency
+* Multi-site Hosting
+	* Use the same application gateway for up to 100 websites
+
+### Exam Tips
+An application gateway is a higher level load balancer.
+* It works on the HTTP request of the traffic, instead of the IP address and port
+* Traffic from a specific web address can go to a specific machine
+* Is a fit for most other Azure services
+* Supports auto-scaling, end-to-end encryption, zone redundancy, and multi-site hosting
+
+
+## Content Delivery Network
+Content Delivery Network = CND. It is a distributed network of servers that can deliver web content close to users.
+
+### Benefits
+* Better Performance
+	* Improve the user experience and the performance of your application
+* Scaling
+	* Scale to suit any spikes in traffic, and also protect your main backend server instance from high loads
+* Distribution
+	* Edge servers will serve requests closest to the user. Less traffic is then sent to the server hosting your application
+
+### Terminology
+* Cache
+	* Collection of temporary copies of original files. The primary purpose is to optimize speed for an application. When a copy expires, a new copy is needed
+* Origin Server
+	* The original location of the files, such as a web application. It's the master copy of your application
+
+
+## ExpressRoute
+If you need a private, secure, high-bandwidth, low-latency connection, directly from your data center or infrastructure to Azure, ExpressRoute is the service you want to use.
+
+
+## Chapter 5 Summary
+### Networking Summary
+* Virtual Network
+	* A fundamental part of Azure. All services are connected to a VNet. Includes an IP address range and subnets. Belongs to a single region and a single subscription
+* Load Balancer
+	* Distributes and balances the incoming traffic to an application or network. Uses IP address and port number to determine the receiving VM in the backend pool
+* VPN Gateway
+	* Connects your Azure network with your on-premises network securely
+* Application Gateway
+	* Distributes incoming traffic based on HTTP request properties, such as URL and host headers. Same session traffic can be handled by multiple servers
+* ExpressRoute
+	* Direct link between on-premises and Azure . Enables a private, secure, high-bandwidth, low-latency connection
+* Content Delivery Network
+	* Stores a cached version of your application on an edge node. Provides better performance and less traffic to your main server. Content cache is updated as necessary
+
+
+------
+
+
+# Chapter 6 Storage
+## Blob
+Blob means "Binary Large Object"
+
+### Storage Levels
+These blobs of data are stored in containers, inside the storage account. There are three layers to Blob storage: storage account, container, and then blob.
+
+### Scenarios
+* Images
+	* Store various sizes and formats as a single image storage
+* All Types
+	* Store any kind of files and have distributed access through the Azure cloud storage
+* Streaming
+	* Stream audio and video directly from your blob storage
+* Log files
+	* Write to log files regardless of size and frequency
+* Data Store
+	* Store any kind of data at scale, such as for archiving, backup, restore and disaster recovery
+
+### Blob Types
+* Block
+	* Store text and binary data up to 4.7TB. Made up of individually managed blocks of data
+* Append
+	* Block blobs that are optimized for append operations. Works well for logging where data is constantly appended
+* Page
+	* Store files up to 8TB. Any part of the file could be accessed at any time, for example a virtual hard drive
+
+### Pricing Tiers
+* Hot
+	* Frequently accessed files. Lower access time and higher access costs
+* Cool
+	* Lower storage costs and higher access times. Data remains here for at least 30 days
+* Archive
+	* Lowest costs and highest access times
+
+
+## Disk
+### Managed Disk
+* Azure Manages
+	* You don't have to worry about backup and uptime
+* Size and Performance
+	* Microsoft and Azure guarantees size and performance as per your agreement with them
+* Upgrade
+	* Easy to upgrade your disk size and type
+
+### Disk Types
+* HDD
+	* Spinning hard drive. Low cost and suitable for backups
+* Standard SSD
+	* Standard for production. Higher reliability, scalability, and lower latency over HDD
+* Premium SSD
+	* Super fast and high performance. Very low latency. Use for critical workloads
+* Ultra Disk
+	* For the most demanding, data-intensive workloads. Disks up to 64TB
+
+
+## File
+### On-Premises
+* Issues
+	* Constraints
+		* You only have a limited amount of storage
+	* Backups
+		* Time and resources spent on maintaining backups
+	* Security
+		* It can be hard to keep all data secure at all times. Specialist assistance often needed
+	* File Sharing
+		* Can be difficult to share files across teams and organizations
+
+### File Benefits
+* Sharing
+	* Share access to the Azure file storage across machines and provide access to your on-premises infrastructure
+* Managed
+	* You don't have to worry about hardware or operating system
+* Resilient
+	* Network and power outages won't affect your storage
+
+### Scenarios
+* Hybrid
+	* Supplement or replace your existing on-premises file storage solution
+* Lift and Shift
+	* Move your existing file storages and related services to Azure
+
+
+## Archive
+### Overview
+* Requirement
+	* Policies, legislation, and recovery can be requirements for archiving data. these can be very large amounts of data
+* Lowest Price
+	* The archive tier is the lowest price of storage on Azure. A few dollars a month can get you terabytes of space
+* Features
+	* Durable, encrypted, and stable. Perfectly suited for data that is accessed infrequently
+* Free Up Premium Storage
+	* With cheap archive storage your can free up your more premium on-premises storage
+* Secure
+	* Fully secure to allow for any personal data such as financial records, medical data, and more
+* Blob
+	* Archive storage is blob storage, so the same tools will work for both
+
+
+## Storage Redundancy
+### Importance of Data Redundancy
+##### Redundancy: Multiple, Replicated Copies of Data
+If one copy fails/is inaccessible, data is still available.
+Azure Storage always creates multiple copies of your data:
+* Automatic
+* Minimum of three copies
+* Invisible to end user
+
+### Multiple Redundancy Options
+* Different location scopes
+	* Single zone
+	* Multiple zones
+	* Multiple regions
+* Higher availability = higher cost
+
+### Redundancy Options at a Glance
+* Single Region
+	* Locally Redundant Storage (LRS)
+	* Zone-Redundant Storage (ZRS)
+* Multi-Region
+	* Geo-Redundant Storage (GRS)
+	* Geo-Zone-Redundant Storage (GZRS)
+
+All options include:
+* Three copies in primary region
+* Three copies in secondary region (multi-region options)
+
+### Locally Redundant Storage (LRS)
+Three copies in a single location (datacenter/zone)
+* Lowest-cost option
+* Protect against single disk failure
+* Does not protect against zone or regional outage
+
+### Zone-Redundant Storage (ZRS)
+Three copies across three availability zones
+* One copy in each zone
+* Protect against zone outage, but not regional outage
+
+### Geo-Redundant Storage (GRS)
+Three copies in two different regions
+* Three copies in primary regional physical location (LRS)
+* Three copies in secondary (paired) region physical location (LRS)
+* Protect against primary region failure, but no primary region zone redundancy
+* Can configure read access from secondary region for high availability
+
+### Geo-Zone-Redundant Storage (GZRS)
+Maximum redundancy!
+* Copy across three availability zones in primary region (ZRS)
+* Three copies in secondary region physical location/zone (LRS)
+* Protect against primary region failure AND primary region zone failure
+* Can also configure read access from secondary region for high availability
+
+### Summing It Up
+Azure Storage automatically replicates data for redundancy
+* Three copies in single region
+* Six copies across two paired regions
+	* Three in each region
+Redundancy options vary by availability and cost
+* Single zone
+* Multiple zones in a single region
+* Across regions
+	* Single/multi-zone in primary region
+
+
+## Moving Data
+### Concept: Moving Data into and Out of Azure Storage
+Different solutions based on:
+* Transfer frequency (occasional/continuous)
+* Data size
+* Network bandwidth
+
+### AzCopy
+Command-Line Utility
+* Transfer blobs and Azure Files
+* Useful for scripting data transfers
+
+### Storage Explorer
+Graphical User Interface (GUI) Interaction
+* Download application
+* User-friendly graphical interface
+	* Drag-and-drop interaction
+* Move all storage account formats
+
+### Azure File Sync
+Synchronize Azure Files with On-Premises File Servers
+* Use cases:
+	* Back up local file server
+	* Synchronize files between multiple on-premises locations
+	* Remote users access Azure Files
+	* Transition to only Azure Files for file server
+
+
+## Additional Migration Options
+### Two More Migration Solutions
+* Azure Data Box
+* Azure Migrate
+
+### Azure Data Box
+Scenario: Transfer LOTS of data and/or limited bandwidth
+* Lots = Too much to transfer over the internet
+* Relative to available network bandwidth
+Offline data transfer to/from Azure
+Copy data to physical data storage device (Data Box)
+* Encrypted
+* Rugged
+Ship Data Box to/from Azure
+* To Azure: Data Box data transferred to storage account
+* From Azure: Data Box delivered to on-premises location for on-site transfer
+
+### Data Box Use Cases
+* Initial bulk data migration
+* Disaster recovery
+	* Restore Azure backup to on-premises location
+* Security Requirements
+	* Sensitive data that cannot be sent over the internet
+
+### Azure Migrate
+Migrate non-Azure resources into Azure
+* Servers
+* Databases
+* Applications
+
+### Azure Migrate Scenario: Migrate Datacenter to Azure
+* Discover dependent resources to migrate
+* Migrate VMs
+* Migrate databases to managed database services (e.g., Azure SQL)
+* Migrate on-premises applications and dependencies
+* Migrate bulk data with Data Box
+
+
+## Premium Performance Options
+Premium Performance Options for Low-Latency Requirements
+* Stored on SSDs
+	* Separate considerations from managed disk types
+* Key considerations:
+	* Available storage types for each performance option
+	* Redundancy options
+		* Trade more performance for less redundancy
+
+### Storage Account Performance Options
+* Standard
+	* Standard general-purpose v2
+		* The default -- supports all storage types
+		* All redundancy options
+* Premium
+	* Premium block blobs
+	* Premium page blobs
+	* Premium file shares
+
+### Premium Block Blobs
+* Supported Storage Type
+	* Blob Storage
+	* Ideal for low-latency blob storage workloads
+		* AI applications, IoT analytics
+* Redundancy
+	* LRS/ZRS only
+
+### Premium Page Blobs
+* Supported Storage Type
+	* Page blobs
+		* Unmanaged virtual disk
+* Redundancy
+	* LRS only (single zone)
+
+### Premium File Shares
+* Supported Storage Type
+	* Azure Files
+		* Ideal for high-performance enterprise (file server) applications
+		* Supports both Server Message Block (SMB) and Network File System (NFS) file shares
+			* Windows/Linux file shares
+	* Redundancy
+		* LRS/ZRS only
+
+### Premium Storage Summary
+Types of Storage Account
+* Premium block blobs
+	* Support Storage Services: Blob Storage
+		* Redundancy Options: LRS/ZRS
+* Premium page blobs
+	* Support Storage Services: Page blobs only (IaaS disks)
+		* Redundancy Options: LRS
+* Premium file shares
+	* Support Storage Services: Azure Files
+		* Redundancy Options: LRS/ZRS
+
+
+## Chapter 6 Summary
+* Blob
+	* General storage for anything you'd like
+	* Block, append, and page varieties
+	* Blob is inside a container, which is inside a storage account
+	* Hot, cool, or archive price tiers
+* Disk
+	* A disk is generally attached to a VM; a managed storage service
+	* Choose HDD, SSD, Premium SSD, or ultra disk
+* File
+	* Mitigating on-premises file storage solutions
+	* Highly available and resilient storage
+	* Easy to share
+* Archive
+	* A very cheap way to store massive amounts of data
+	* Also a Blob Storage type
+
+* Storage Redundancy
+	* Multiple copies of Azure Storage data
+	* Minimum three copies
+	* Single/multiple copies
+	* Single/multiple regions
+* Moving Data
+	* AzCopy: Command-line utility
+	* Storage Explorer: GUI interface
+	* Azure File Sync: Sync Azure Files with on-premises file server
+* Additional Migration Options
+	* Azure Data Box: Offline data transfer
+	* Azure Migrate: Migrate on-premises resources
+		* Servers, databases, applications
+* Premium Performance Options
+	* SSD-backed storage options
+	* Limited redundancy options
+	* Premium storage types
+
+
+------
+

@@ -7,9 +7,9 @@ theme = 'gokarna'
 
 [params]
   avatarURL = "/images/logos/"
-  description = "DESC"
+  description = "Network/Systems Technician"
   ShowBackToTopButton = true
-  metaKeywords = ["blog", "gokarna", "hugo"]
+  metaKeywords = ["blog", "gokarna", "hugo", "Connor", "McElwain", "Connor McElwain", "Network/Systems Technician", "Network Technician", "Systems Technician"]
 
 [markup]
   [markup.tableOfContents]
@@ -47,3 +47,4 @@ theme = 'gokarna'
     url = "https://github.com/ConnorMcElwain"
     weight = 5
     pre = "<span data-feather='github'></span>"
+    target = "_blank"

@@ -1036,3 +1036,472 @@ Types of Storage Account
 
 ------
 
+# Chapter 7 - Database (Supplemental)
+## Cosmos DB
+### Synchronization
+* Easy with Cosmos
+	* Traditional databases that weren't cloud enabled could be very difficult to set up across multiple regions. Azure takes care of all of it with Cosmos
+* One Click to Add Regions
+	* It's very easy to expand to more regions with Cosmos DB and have the data stay in sync
+* Continued Synchronization
+	* Cosmos DB stays on top of all reads and writes to your data and makes sure data is moved between regions to stay in sync
+
+### Scalability
+* Automated
+	* Cosmos DB automatically scales to meet resource demand
+* Infinite Resources
+	* Any number of users of your application can be supported
+* Lowest Price
+	* Even though the scaling is automatic, you only pay for the resources you use
+
+### Connectivity
+* Developer
+	* Choose from various software development kits (SDKs) and application programming interfaces (APIs)
+* Languages
+	* A language for most modern developers, including C#, Java, and Node.js
+* Platforms
+	* Choose from lots of data platforms to integrate with, including SQL, MongoDB, and Cassandra
+
+### Warning!
+Costs can run up quickly!
+
+
+## Azure SQL
+### Managed Service
+Azure will take care of your hardware and infrastructural level needs (servers, storage, network, and everything else infrastructure related). Azure SQL just sits on top of this and provides the business logic and functions you need.
+### Migration
+* Frictionless Process
+* Cost Saving
+* Lower Total Cost of Ownership
+
+### Built-in Machine Learning
+* Optimization
+	* Suggestions on how to optimize and improve performance of Azure SQL instances
+* Warnings
+	* You will get warnings of degrading instances, and if anything out of the ordinary is happening
+
+### Cloud Benefits
+* Scalability
+	* Scale your Azure SQL instances and get high availability as well
+* Space
+	* Manage huge databases up to 100 Terabytes
+* Security
+	* Benefit from the built-in security features of the Azure cloud platform
+
+### SQL Database vs. SQL Managed Instance
+* Azure SQL Database
+	* Most like traditional SQL Server
+* Azure SQL Managed Instance
+	* Aimed at migrating from on-premises
+
+
+## Azure Database for MySQL
+### Context
+* SQL
+	* Made by Microsoft
+* MySQL
+	* Made by the community
+
+### MySQL Features
+* Open Source
+	* MySQL is an open source project where any member of the community can contribute
+* Relational Database
+	* Data in the database is connected through relations in the data itself
+* Mature and Stable
+	* Millions of applications and websites use MySQL. It's both a mature product and very stable
+
+### Azure Advantages
+* Platform-as-a-Service (PaaS)
+	* The service infrastructure is managed by Microsoft
+* Development Focus
+	* Focus on developing your business strengths instead of managing servers and networks
+* Choice of Language
+	* Use the language and framework of your choice, such as PHP, and WordPress
+* High Availability
+	* Cloud glitter can provide high availability and scalability with ease. MySQL can handle an increasing number of users
+* Azure Security Features
+	* You get all the high standard Azure security features included
+* Cloud Capabilities
+	* All the cloudy PaaS features such as database patching, automatic backups and monitoring are included in the price
+
+### MySQL Use Cases
+* Web Applications
+* E-Commerce
+* Mobile Apps
+* Digital Marketing
+* Finance Management
+* Gaming
+
+
+## Azure Database for PostgreSQL
+### PostgreSQL
+* Open-Source Database
+	* It's an open-source relational database, similar to MySQL
+* Why The Name?
+	* It came "post" the database Ingres, so the name became Postgres, which changed to PostgreSQL
+* Free and Stable
+	* It's free and very stable. Constantly improved since 1996. It's used in millions of installations
+
+### Features
+* Extensions
+	* Use a large number of extensions, such as JSONB, geospatial functions, indexing, integration with tools and much more
+* Horizontal Scaling
+	* Use very high performant access to distributed data sets. In other words, use data faster across hundreds of servers
+* Performance Recommendations
+	* Get recommendations based on usage on how to make your database perform better. Get notifications of disruptive events
+* Fully Managed
+	* Azure gives you automatic database patching, automatic backups, and build-in monitoring
+
+### PostgreSQL Use Cases
+* Financial Applications
+	* Ideal for online transactions and integrates with mathematical software
+* Government
+	* Governments use Postgres for geometric (GIS) data. One example is PostGIS, which is heavily used
+* Manufacturing
+	* Downtime is disastrous, and PostgreSQL provides automated failover and full redundancy
+
+
+## Database Migration Services
+### Database Migration
+* Single Tool
+	* One step migration for Microsoft SQL to Azure SQL
+* Documentation
+	* Comprehensive step-by-step guides and documentation for helping you migrate
+* Guides for non-MS
+	* Very detailed guides for migrating from non-Microsoft databases
+
+
+## Chapter 7 Summary
+### Azure Databases
+* Cosmos DB
+	* Globally distributed database. It's super fast and easy to manage. Scale to infinite performance and size
+* Azure SQL
+	* Fully managed and using stable Microsoft SQL Technology. Compatible with on-premises SQL severs
+* Azure Database for MySQL
+	* A very popular community driven open-source database that's used in millions of applications. Very robust and stable
+* Azure Database for PostgreSQL
+	* Also a very popular choice of relational database. Provides enterprise features like horizontal scaling. Azure offers a managed version
+* Database Migration Services
+	* Migration of almost any kind of database to Azure SQL or SQL Server. Guides, step-by-step instructions, comprehensive documentation
+
+
+------
+
+
+# Chapter 8 - Authentication and Authorization
+## Identity Services
+### Authentication
+* Making sure you are you
+* Confirming identity
+* First test for access
+
+### Authorization
+* Comes after authentication
+* Do you get access?
+* Granular control
+
+### Access Management
+* Authentication vs. Authorization
+	* You must know the difference to create effective access management
+* Keep out the unwanted
+	* Access management is critical to ensure only the right people and processes have access
+
+
+## Azure Active Directory
+### Active Directory
+* Traditional Office Use
+	* Active Directory was designed for traditional office use with computers and printers
+* What is "Web"?
+	* The web as a concept or service was not part of the design for Active Directory. Web services were not part of the original vision for Active Directory in 2000
+* Authentication
+	* Active Directory authentication uses services that aren't available on Azure
+
+Active Directory is NOT Azure Active Directory.
+
+### Azure Active Directory (AAD) Service
+* Mandatory
+	* You can't have an Azure account without an AAD service
+* First User
+	* Every Azure account needs a first user and this user is in the initial AAD instance
+
+### Tenant
+* Organization
+	* A tenant represents the organization
+* Dedicated AAD
+	* A tenant is dedicated instance of AAD that an organization receives when signing up for Azure
+* Separate
+	* Each tenant is distinct and completely separate from other AAD tenants
+* One User - One Tenant
+	* Each user in Azure can only belong to a single tenant. Users can be guests of other tenants though
+
+### Subscription
+* Billing Entity
+	* All resources within a subscription are billed together
+* Cost Separation
+	* You can have multiple subscriptions within a tenant to separate costs
+* Payment
+	* If a subscription isn't paid, all the resources and services associated with the subscription stop
+
+### Hybrid Cloud Architecture
+In a hybrid cloud architecture, you have some services on-premises and some services hosted on Azure. When you want to setup a hybrid cloud infrastructure, AAD can help manage your users both in the cloud on Azure and on your premises.
+
+### Azure AD Now Part of Microsoft Entra
+Microsoft Entra = New Product Family
+* Includes all of Microsoft's identity and access capabilities
+* Includes Azure AD, plus Permissions Management and Verified ID
+* Exam perspective: Know that Azure AD is part of the broader Microsoft Entra product family
+
+### Exam Tips
+Manage users and permissions with Azure Active Directory.
+* Active Directory(AD) is not the same as Azure Active Directory
+* Different skillsets from AD to Azure AD
+* Every Azure account will have an Azure AD service
+* A tenant is a dedicated instance of Azure AD. It represents your organization in Azure
+* A user belongs to a single tenant, but can be a guest in multiple
+* A subscription is a billing entity. All resources belong to a single subscription
+* Azure AD can help manage users in a hybrid cloud setup
+
+
+## Zero Trust Concepts
+### Classic Trusted vs. Untrusted Model
+Trusted Perimeter
+Trust boundary for secure access
+* Example: Corporate network
+* Restrict private access to secure networks
+
+### Challenges with Trusted Perimeter Model
+Must be on corporate network to access resources
+* Remote work is a challenge
+	* VPN is extension of trusted perimeter
+* Mobile device access even more challenging
+Rogue user/malware inside trusted perimeter network can cause havoc
+* Broad scope of access
+
+### Enter Zero Trust
+What is Zero Trust?
+* All users assumed untrustworthy unless proven otherwise
+	* Trusted by identity
+	* Regardless of location (trusted/untrusted network)
+	* Least privilege access -- just enough permissions to perform job
+	* Simplified, centralized managed
+Zero Trust = Trusted Identities, Not Location
+
+### Zero Trust in Action
+Access Microsoft 365 email, documents, and resources for remote workforce
+* Access from anywhere
+* Authenticate with identity, not over VPN
+Centrally control access with Conditional Access policies
+Allow access only from approved managed devices
+* Independent from network location
+
+
+## Multi-Factor Authentication
+### Approach
+* Something you know
+* Something you have
+* Something you are
+
+### Two Factor Authentication - Example
+You are trying to log into a website that requires you to provide your valid email and password for authentication. Getting this correct is one factory of authentication. To make sure you credentials haven't been compromised, a code is sent to your phone, which you receive and enter into the website. The system uses something you know (your username/password) and something you have (your phone) to make sure you can get access into the website. MFA is enabled through Azure Active Directory.
+
+
+## Conditional Access
+### Conditional Access Concepts
+Authentication Protections beyond Username/Password
+* If/then policy to grant access
+	* If (user) meets these conditions (signals), then grant/block access to defined applications
+* Often paired with multi-factor authentication (MFA)
+	* Centrally applied MFA enforcement
+		* Does not rely on end user enabling MFA
+
+### How It Works
+Create Conditional Access Policy
+* Assign signals (conditions)
+	* Users/groups
+	* Application to grant/deny access
+	* Location (IP)
+	* Approved devices
+* Access decisions (grant/block access)
+	* Grant access
+	* Block access
+	* Require MFA
+
+### Conditional Access Scenarios
+* Enforce MFA for all administrators/all users
+* Block sign-ins using legacy authentication protocols
+* Grant access only to specific locations
+* Require organization-managed devices for application sign-in
+
+
+## Passwordless Authentication
+### Security vs. Convenience: The Never-Ending Conflict
+Multi-Factor Authentication is More Secure, But Less Convenient
+* More steps require to log in
+	* Password and device/biometrics
+	* Increased user frustration:
+		* If everything is not working as expected
+		* Overall, less convenient
+
+### Passwordless Authentication: One Possible Solution
+Objective: Increase Convenience While Staying Secure
+* Password only = More convenient, but less secure
+* Password + MFA = Higher security, but inconvenient
+* Passwordless Authentication = High security and convenient
+	* Remove password from system login
+	* Replace with:
+		* Something you have (phone/key fob)
+		* Something you know/are (on device)
+			* Fingerprint/face unlock/PIN
+
+### Passwordless Authentication Methods
+Microsoft Authentication App
+* Microsoft's MFA mobile app
+	* Configure in Azure AD
+* Authenticate in app with biometrics/PIN
+Windows Hello
+* Face recognition in Windows
+FIDO2 Security Key
+* Hardware key
+
+### Example Passwordless Login Scenario
+* Log in to Microsoft 365, and enter your username.
+* Instead of a password, you are prompted to check Microsoft Authenticator.
+* Use  the biometric/PIN in the Authenticator app to confirm authentication
+* Confirm numerical challenge in the Authenticator app
+
+
+## External Guess Access
+### Challenge: How Do You Collaborate With External Users?
+Scenario: Working with outside consultant to streamline Azure or Azure AD configuration
+
+Solutions?
+Create separate organization account for external user
+* Requires external user to juggle two accounts
+Invite guest user to Azure tenant
+* Guest user uses existing account as an external collaborator
+* B2B collaboration
+
+### Adding a Guest User
+Invite a variety of account types (identity providers)
+* Microsoft, Google, Facebook
+* Other external identity providers
+Assign permissions for guest account
+* Principle of least privilege
+* Different permissions between Azure AD and Azure subscription
+Optional: Assign guest user to application
+Optional: Apply cross- tenant Conditional Access policy
+* Require MFA
+* Require approved managed devices
+
+### Scenario: Inviting an External Consultant
+Configure identity provider (if non-Microsoft)
+Invite external party
+After guest user accepts invitation, assign permissions
+* Optionally: Assign apps, apply Conditional Access policy
+
+
+## Azure Active Directory Domain Services
+### Limitations of Azure AD and Cloud Migrations
+Legacy applications
+* Unable to use modern authentication protocols (OAuth 2.0)
+Require traditional Active Directory (AD DS) management/protocols
+* Group Policy
+* LDAP
+* NTLM
+* Kerberos
+
+### Possible Solutions?
+Continue using on-premises AD
+* Sync to Azure AD with Azure AD Connect
+Configure AD server on Azure VM
+* Also known as self-managed AD DS
+* You maintain/configure the operating system (OS)
+Azure Active Directory Domain Services (Azure AD DS)
+* Managed Active Directory Domain Services
+* Provides classic AD features in a managed service
+	* Group Policy, LDAP, Kerberos, domain join
+
+### How Azure AD DS Works
+Azure AD DS is a managed service
+* No need for OS configuration/management
+* Behind the scenes: two Windows domain controllers for high availability
+Create unique namespace/domain name
+* Example: aadds-companyname.com
+* Standalone domain, not extension of on-premises AD domain
+One-way sync from Azure AD to Azure AD DS
+* Synchronize users, groups, and credentials
+* Azure AD may also bidirectional sync with on-premises AD
+
+### Azure AD DS Scenario
+Lift and shift legacy enterprise application to Azure VMs
+* Application does not support modern authentication
+Requirement to integrate application with classic, cloud-hosted AD using managed services
+Cloud-hosted legacy application authenticates with Azure AD DS
+
+
+## Single Sign-On
+### Concept
+One pair of credentials for multiple services
+
+### Azure SSO
+Azure Active Directory Seamless Single Sign-On
+* Enable SSO in AAD
+* Seamlessly use all applications without logging in
+* Single username and password
+
+
+## Chapter 8 Summary
+### Azure AD (AAD): A Central Component of Azure Authentication/Authorization
+* AAD Is Fundamental!
+	* You can't use Azure without AAD. AAD is not the same as Active Directory (AD)
+* AAD Is First
+	* The first service of every new account will be an AAD instance
+* Tenant
+	* Tenant = Organization
+	* Single instance of AAD
+	* A user account can be a member of a single tenant and can be a guest of up to 499 tenants
+* Subscription
+	* Billing entity that controls the cost of resources and services associated with it
+* Hybrid Cloud
+	* AAD can help you manage users in a hybrid cloud architecture between on-premises and in Azure
+
+### Authentication/Authorization Topics
+Zero Trust Concepts
+* Everyone assumed untrustworthy unless proven otherwise
+	* Regardless of location
+* Trusted identities vs. trusted locations
+* Necessary for remote work
+Multi-Factor Authentication
+* Extra layer of security using something you know, something you have, and something you are
+Conditional Access
+* If/then policy for granting access (i.e., conditions)
+* Centralized management
+* Examples:
+	* Require MFA
+	* Require managed device
+Passwordless Authentication
+* Bridge gap between security and convenience
+* Remove system password
+	* Replace with something you have/are
+* Methods:
+	* Microsoft Authenticator
+	* Windows Hello
+	* FIDO2 hardware security key
+
+External Guest Access
+* External collaboration
+* Invite external user with existing account
+* Works with many identity providers
+	* Microsoft/Google/Facebook
+Azure Active Directory Domain Services (Azure AD DS)
+* Managed instance of Active Directory (AD DS)
+* Integrates with classic AD features
+	* Kerberos, LDAP, NTLM, Group Policy
+* One-way sync with Azure AD
+* Requires separate domain
+Single Sign-On
+* Use single username and password to log in to multiple applications using AAD
+
+
+------
+
